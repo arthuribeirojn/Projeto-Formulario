@@ -177,91 +177,7 @@
                         <th>Ações</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <img
-                            src="dist/img/user1-128x128.jpg"
-                            alt="User Image"
-                            class="img-circle img-sm"
-                          />
-                        </td>
-                        <td>Fulano</td>
-                        <td>fulano@hcode.com.br</td>
-                        <td>Sim</td>
-                        <td>02/04/2018</td>
-                        <td>
-                          <button
-                            type="button"
-                            class="btn btn-primary btn-xs btn-flat"
-                          >
-                            Editar
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-danger btn-xs btn-flat"
-                          >
-                            Excluir
-                          </button>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          <img
-                            src="dist/img/user1-128x128.jpg"
-                            alt="User Image"
-                            class="img-circle img-sm"
-                          />
-                        </td>
-                        <td>Fulano</td>
-                        <td>fulano@hcode.com.br</td>
-                        <td>Sim</td>
-                        <td>02/04/2018</td>
-                        <td>
-                          <button
-                            type="button"
-                            class="btn btn-primary btn-xs btn-flat"
-                          >
-                            Editar
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-danger btn-xs btn-flat"
-                          >
-                            Excluir
-                          </button>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          <img
-                            src="dist/img/user1-128x128.jpg"
-                            alt="User Image"
-                            class="img-circle img-sm"
-                          />
-                        </td>
-                        <td>Fulano</td>
-                        <td>fulano@hcode.com.br</td>
-                        <td>Sim</td>
-                        <td>02/04/2018</td>
-                        <td>
-                          <button
-                            type="button"
-                            class="btn btn-primary btn-xs btn-flat"
-                          >
-                            Editar
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-danger btn-xs btn-flat"
-                          >
-                            Excluir
-                          </button>
-                        </td>
-                      </tr>
-                    </tbody>
+                    <tbody id="table-users"></tbody>
                   </table>
                 </div>
                 <!-- /.box-body -->
@@ -326,6 +242,7 @@
                             type="radio"
                             id="exampleInputGenderM"
                             name="gender"
+                            value="M"
                           />
                           Masculino</label
                         >
@@ -335,7 +252,9 @@
                           <input
                             type="radio"
                             id="exampleInputGenderF"
-                            name="gender" checked
+                            name="gender"
+                            value="F"
+                            checked
                           />
                           Feminino</label
                         >
@@ -725,7 +644,12 @@
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" id="exampleInputAdmin" name="admin" /> Administrador
+                        <input
+                          type="checkbox"
+                          id="exampleInputAdmin"
+                          name="admin"
+                        />
+                        Administrador
                       </label>
                     </div>
                   </div>
@@ -755,6 +679,9 @@
         Treinamentos.
       </footer>
     </div>
+    
+    <script src="models/User.js"></script>
+    <script src="controllers/UserController.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
